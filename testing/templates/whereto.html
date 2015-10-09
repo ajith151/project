@@ -1,0 +1,14 @@
+<html>
+{%load staticfiles%}
+<b>What to read next..</b>
+<table><tr>
+{%for art in test1%}
+                <td>
+                            <div><a href="{% url "detail" art.pk %}"><img src = "{{art.hero_image.url}}" height ="150" width ="150" /></a></div>
+                            <div><a href="{% url "detail" art.pk %}">{{art.title}}</a></div>
+                            
+                    </td><td>&nbsp&nbsp&nbsp</td>         
+                    
+            {%endfor%}
+</tr></table>            
+</html>            

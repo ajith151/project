@@ -1,0 +1,8 @@
+<html>
+<div class="list-group">
+					{% load staticfiles %}				
+                    <a href="{% url "detail" 5 %}" class="list-group-item"><img src="{% static "img/pic1.jpg" %}" /></a>
+                    <a href="{% url "detail" 6 %}" class="list-group-item"><img src="{% static "img/pic2.jpg" %}" /></a>
+                    <a href="{% url "detail" 7 %}" class="list-group-item"><img src="{% static "img/pic3.jpg" %}" /></a>
+</div>
+</html>

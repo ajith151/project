@@ -1,0 +1,17 @@
+<html>
+<table align='center' width = 100px>
+{%for art in rows%}
+<article>
+<tr align='center' width = 100px>
+<h1><a href="{% url "detail" %}">{{art.title}}</a></h1><div align = 'right'>Auther: {{art.auther}}</div>
+</tr>
+<p>
+	{{art.body}}
+</p>	
+
+ {{art.hero_image}}
+
+</article>
+{%endfor%}
+</table>
+</html>
